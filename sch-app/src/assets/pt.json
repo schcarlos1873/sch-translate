@@ -1,0 +1,12 @@
+{
+    "sys": {
+        "title": "Exemplo de Angular",
+        "name": "Nome",
+        "age": "Idade",
+        "weight": "Peso",
+        "height": "Altura",
+        "category": "Categoria",
+        "salary": "Salário",
+        "datefight": "Data"
+    } 
+}

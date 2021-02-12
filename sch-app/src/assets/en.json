@@ -1,0 +1,10 @@
+{
+    "title": "Angular example",
+    "name": "Name",
+    "age": "Age",
+    "weight": "Weight",
+    "height": "Height",
+    "category": "Category",
+    "salary": "Salary",
+    "datefight": "Date"
+}

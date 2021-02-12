@@ -1,0 +1,53 @@
+<div class='sch-title'>
+    <div>
+        <h1>{{'title' | translate}}</h1>
+    </div>
+    
+    <label>{{'LanguageId' | translate}}</label>
+    <select (change)="config($event)">
+        <option selected value="pt-BR">pt-BR</option>
+        <option value="en-US">en-US</option>
+    </select>
+</div>
+<div>
+    <label>{{'millDesc' | translate | uppercase}}</label>
+    <label>{{'age' | translate}}</label>
+</div>
+
+<div>
+    <label>{{'weight' |translate}}</label>
+    <label>{{'height' | translate}}</label>
+</div>
+
+<div>
+    <label>{{'category' | translate}}</label>
+    <label>{{'salary' | translate}}</label>
+    <label>{{'datefight' | translate}}</label>
+</div>
+
+<div>
+    <label>{{'Digite a Senha' | translate}}</label>
+    <input class="sch-input" placeholder="{{'Password' | translate}}"> 
+</div>
+
+<table class="sch-table">
+<thead>
+    <tr>
+        <th>{{'Id' | translate}}</th>
+        <th>{{'LanguageId' | translate}}</th>
+        <th>{{'FieldName' | translate}}</th>
+        <th>{{'Prefix' | translate}}</th>
+        <th>{{'FieldDefinition' | translate}}</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of list">
+        <td>{{item.Id}}</td>
+        <td>{{item.LanguageId}}</td>
+        <td>{{item.FieldName}}</td>
+        <td>{{item.Prefix}}</td>
+        <td>{{item.FieldDefinition}}</td>
+    </tr>
+</tbody>
+
+</table>
